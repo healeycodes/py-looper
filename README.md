@@ -24,13 +24,13 @@ Creates `[movie_name].mp4` in the py-looper directory.
 e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie`
 
 
-### Min_length
+#### min_length
 
 Formatted as `Minutes.Seconds`. One minute is `1.0`. Thirty seconds is `0.30`. Note: the preceding `0.` is required when specifiying a time less than one minute.
 
 The program will loop the audio file until the resulting video is at least as long as the min_length parameter.
 
 
-### Image
+#### image
 
 Any picture file (png, tiff, jpeg, etc.)
