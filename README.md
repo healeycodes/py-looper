@@ -24,9 +24,7 @@ Install dependencies via `pip install -r requirements.txt`
 
 `python main.py [image] [audio] [min_length] [movie_name]`
 
-Creates `[movie_name].mp4` in the py-looper directory.
-
-e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie`
+e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_name].mp4` in the py-looper directory.
 
 Note: spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
 
