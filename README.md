@@ -30,6 +30,7 @@ e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie`
 
 Note: spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
 
+Also note: use tab to autocomplete image/audio file names and locations.
 
 #### [image]
 
