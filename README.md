@@ -23,6 +23,8 @@ Creates `[movie_name].mp4` in the py-looper directory.
 
 e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie`
 
+Note: spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
+
 
 #### [image]
 
