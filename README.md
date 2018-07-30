@@ -28,7 +28,7 @@ e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_na
 
 The resulting video file will have the same dimensions as the supplied [image].
 
-Spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
+Spaces in these arguments will require the argument to be passed with `'` single quote marks on most terminals. E.g., `'My Image File.png'`.
 
 Use tab to autocomplete image/audio filenames and locations.
 
@@ -48,4 +48,4 @@ The program will loop the audio file until the resulting video is at least as lo
 
 #### [movie_name]
 
-Any string, e.g., `hello`, `test-123`, `'spaces required quotes'`. The file will be saved as MP4.
+Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
