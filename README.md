@@ -8,14 +8,14 @@ python - https://www.python.org. Tested with Python v3.6.5 but v2.7+ should be f
 
 ffmpeg - https://www.ffmpeg.org/ - is required but may be installed automatically and/or will have already been installed by another program. 
 
-pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager.
+pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager, and is sometimes installed when Python is.
 
 
 ### Installation
 
 Navigate to the py-looper folder via terminal or cmd `cd py-looper`
 
-Install dependencies via `pip install -r requirements.txt`
+Install dependencies via `pip install -r requirements.txt`. Or just `pip install moviepy` as there's only one dependency.
 
 
 ### Running
