@@ -26,15 +26,15 @@ Install dependencies via `pip install -r requirements.txt`
 
 e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_name].mp4` in the py-looper directory.
 
-Note: spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
+The resulting video file will have the same dimensions as the supplied [image].
 
-Also note: use tab to autocomplete image/audio file names and locations.
+Spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
+
+Use tab to autocomplete image/audio filenames and locations.
 
 #### [image]
 
 Any picture file (png, tiff, jpeg, etc.)
-
-Note: the resulting video file will have the same dimensions as the supplied image.
 
 #### [audio]
 
