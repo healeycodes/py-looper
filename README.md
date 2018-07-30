@@ -34,6 +34,8 @@ Also note: use tab to autocomplete image/audio file names and locations.
 
 Any picture file (png, tiff, jpeg, etc.)
 
+Note: the resulting video file will have the same dimensions as the supplied image.
+
 #### [audio]
 
 Any audio file.
