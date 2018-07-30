@@ -38,7 +38,7 @@ Any picture file (png, tiff, jpeg, etc.)
 
 #### [audio]
 
-Any audio file.
+Any audio file that loops perfectly.
 
 #### [min_length]
 
