@@ -16,9 +16,9 @@ try:
     movie_name = sys.argv[4] + '.mp4'
 except:
     print('Error: Wrong or missing command line arguments!')
-    print('Example args: my_image.png my_audio.mp3 0.30 my_movie')
     print('[image] [audio] [min_length] [movie_name]')
-    print('min_length is formatted as Minutes.Seconds')
+    print('Example args: my_image.png my_audio.mp3 0.30 my_movie')
+    print('[min_length] is formatted as Minutes.Seconds')
     input('All args are required. Quiting..')
     sys.exit(1)
 
@@ -33,7 +33,6 @@ audio = audio_loop.audio_loop(audio, nloops=loops_needed)
 
 # set up our clip
 image_clip = image_clip.set_audio(audio)
-image_clip = image_clip.resize(width=1080)
 image_clip.fps = 24
 image_clip.duration = audio.duration
 
