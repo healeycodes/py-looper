@@ -1,5 +1,5 @@
 ## py-looper
-Create MP4 clips from an image and an loopable audio file via command line.
+Create MP4 clips from an image and a loopable audio file via command line.
 
 
 ### Pre-installation
@@ -8,14 +8,14 @@ python - https://www.python.org. Tested with Python v3.6.5 but v2.7+ should be f
 
 ffmpeg - https://www.ffmpeg.org/ - is required but may be installed automatically and/or will have already been installed by another program. 
 
-pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager.
+pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager, and is sometimes installed when Python is.
 
 
 ### Installation
 
 Navigate to the py-looper folder via terminal or cmd `cd py-looper`
 
-Install dependencies via `pip install -r requirements.txt`
+Install dependencies via `pip install -r requirements.txt`. Or just `pip install moviepy` as there's only one dependency.
 
 
 ### Running
@@ -24,13 +24,13 @@ Install dependencies via `pip install -r requirements.txt`
 
 `python main.py [image] [audio] [min_length] [movie_name]`
 
-Creates `[movie_name].mp4` in the py-looper directory.
+e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_name].mp4` in the py-looper directory.
 
-e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie`
+The resulting video file will have the same dimensions as the supplied [image].
 
-Note: spaces in these arguments will require the argument to be passed with `'` single quote marks. E.g., `'My Image File.png'`.
+Spaces in these arguments will require the argument to be passed with `'` single quote marks on most terminals. E.g., `'My Image File.png'`.
 
-Also note: use tab to autocomplete image/audio file names and locations.
+Use tab to autocomplete image/audio filenames and locations.
 
 #### [image]
 
@@ -38,7 +38,7 @@ Any picture file (png, tiff, jpeg, etc.)
 
 #### [audio]
 
-Any audio file.
+Any audio file that loops perfectly.
 
 #### [min_length]
 
@@ -48,4 +48,4 @@ The program will loop the audio file until the resulting video is at least as lo
 
 #### [movie_name]
 
-Any string, e.g., `hello`, `test-123`, `'spaces required quotes'`. The file will be saved as MP4.
+Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
