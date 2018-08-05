@@ -15,7 +15,7 @@ pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard
 
 Navigate to the py-looper folder via terminal or cmd `cd py-looper`
 
-Install dependencies via `pip install -r requirements.txt`. Or just `pip install moviepy` as there's only one dependency.
+Install dependencies via `pip install -r requirements.txt`.
 
 
 ### Running
