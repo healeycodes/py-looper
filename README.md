@@ -1,6 +1,6 @@
 ## py-looper
 
-Create MP4 clips from an image and a loopable audio file via command line. This documentation aims to be reasonably beginner friendly - raise an issue if you find it to be otherwise!
+Create MP4 clips from an image and a loopable audio file via command line :heart:.
 
 <br>
 
