@@ -1,5 +1,6 @@
 ## py-looper
-Create MP4 clips from an image and a loopable audio file via command line.
+
+Create MP4 clips from an image and a loopable audio file via command line. This documentation aims to be reasonably beginner friendly - raise an issue if you find it to be otherwise!
 
 
 ### Pre-installation
@@ -26,26 +27,24 @@ Install dependencies via `pip install -r requirements.txt`.
 
 e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_name].mp4` in the py-looper directory.
 
-The resulting video file will have the same dimensions as the supplied [image].
+The resulting video file will have the same dimensions as the supplied `[image]`.
 
-Spaces in these arguments will require the argument to be passed with `'` single quote marks on most terminals. E.g., `'My Image File.png'`.
+Spaces in these arguments will require the argument to be passed with `'` single quote marks on most terminals. E.g., `'My Image File.png'`. Remember you can use tab to autocomplete image/audio filenames and locations.
 
-Use tab to autocomplete image/audio filenames and locations.
-
-#### [image]
+#### `[image]`
 
 Any picture file (png, tiff, jpeg, etc.)
 
-#### [audio]
+#### `[audio]`
 
 Any audio file that loops perfectly.
 
-#### [min_length]
+#### `[min_length]`
 
 Formatted as `Minutes.Seconds`. One minute is `1.0`. Thirty seconds is `0.30`. Note: the preceding `0.` is required when specifiying a time less than one minute.
 
 The program will loop the audio file until the resulting video is at least as long as the min_length parameter.
 
-#### [movie_name]
+#### `[movie_name]`
 
 Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
