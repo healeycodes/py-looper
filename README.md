@@ -2,6 +2,7 @@
 
 Create MP4 clips from an image and a loopable audio file via command line. This documentation aims to be reasonably beginner friendly - raise an issue if you find it to be otherwise!
 
+<br>
 
 ### Pre-installation
 
@@ -11,6 +12,7 @@ ffmpeg - https://www.ffmpeg.org/ - is required but should be installed automatic
 
 pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager and is sometimes installed when Python is.
 
+<br>
 
 ### Installation
 
@@ -18,6 +20,7 @@ Navigate to the py-looper folder via terminal or cmd `cd py-looper`
 
 Install dependencies via `pip install -r requirements.txt`.
 
+<br>
 
 ### Running
 
@@ -30,6 +33,8 @@ e.g., `python main.py my_image.png my_audio.mp3 1.0 my_movie` creates `[movie_na
 The resulting video file will have the same dimensions as the supplied `[image]`.
 
 Spaces in these arguments will require the argument to be passed with `'` single quote marks on most terminals. E.g., `'My Image File.png'`. Remember you can use tab to autocomplete image/audio filenames and locations.
+
+<br>
 
 #### `[image]`
 
