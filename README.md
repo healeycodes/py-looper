@@ -4,7 +4,7 @@ Create MP4 clips from an image and a loopable audio file via command line.
 
 ### Pre-installation
 
-python - https://www.python.org. Tested with Python v3.6.5. Python is packaged with Mac OS X and Linux but not Windows. Check your Python version if you run into issues (`python -V`).
+python - https://www.python.org. Tested with Python v3.6.5. Python is packaged with Mac OS X and Linux but not Windows. Check your Python version if you run into issues (`python -v`).
 
 ffmpeg - https://www.ffmpeg.org/ - is required but should be installed automatically if not present. It's also packaged with some OSes and other programs often require it.
 
