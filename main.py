@@ -35,7 +35,7 @@ def video_creation():
 
         movie_name = sys.argv[4] + '.mp4'
     except:
-        error('Couldn\'t retrieve files')
+        arg_error('Unspecified issue retrieving sys.argv data.')
 
     image_clip = ImageClip(image_src)  # get image
     audio = AudioFileClip(audio_src)  # get audio
