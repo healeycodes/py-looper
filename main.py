@@ -10,7 +10,7 @@ def arg_error(err, e=None):
     if e is not None:
         print(e)
     print('Command line argument error.\n')
-    print('Error: {}\n'.format(err))
+    print('Error: {0}\n'.format(err))
     print('Required args: [image] [audio] [min_length] [movie_name]')
     print('E.g., my_image.png my_audio.mp3 0.30 my_movie')
     print('Note: [min_length] is formatted as Minutes.Seconds')
@@ -18,7 +18,7 @@ def arg_error(err, e=None):
     sys.exit(1)
 
 
-# main program logic, called at end of file
+# program entry point
 def video_creation():
 
     # command line arguments [main.py, image, audio, min_length, movie_name]
@@ -41,7 +41,7 @@ def video_creation():
 
     movie_name = sys.argv[4] + '.mp4'
 
-    # start of moviepy logic
+    # beginning of moviepy functions
     image_clip = ImageClip(image_src)  # get image
     audio = AudioFileClip(audio_src)  # get audio
 
