@@ -6,7 +6,9 @@ from moviepy.audio.fx import audio_loop
 
 
 # prints custom error regarding command line arguments
-def arg_error(err):
+def arg_error(err, e=None):
+    if e is not None:
+        print(e)
     print('Command line argument error.\n')
     print('Error: {}\n'.format(err))
     print('Required args: [image] [audio] [min_length] [movie_name]')
@@ -30,14 +32,14 @@ def video_creation():
     try:
         min_length = int(str(sys.argv[3]).split(  # format: Minutes.Seconds
             '.')[0]) * 60 + int(str(sys.argv[3]).split('.')[1])  # converted to seconds
-    except:
-        arg_error('[min_length] not parsable. \'{0}\' was supplied when the correct format is \'numbers.numbers\'.'.format(sys.argv[3]))
+    except Exception as e:
+        arg_error('[min_length] not parsable. \'{0}\' was supplied when the correct format is \'numbers.numbers\', e.g., \'123.59\'.'.format(
+            sys.argv[3]), e)
 
     if min_length < 1:
         min_length = 1  # keep min_length no smaller than one second
 
     movie_name = sys.argv[4] + '.mp4'
-
 
     # start of moviepy logic
     image_clip = ImageClip(image_src)  # get image
