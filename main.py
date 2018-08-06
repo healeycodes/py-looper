@@ -24,19 +24,22 @@ def video_creation():
         arg_error('{0} args supplied but {1} args required.'.format(
             len(sys.argv) - 1, 4))
 
-    try:
-        image_src = sys.argv[1]
-        audio_src = sys.argv[2]
+    image_src = sys.argv[1]
+    audio_src = sys.argv[2]
 
+    try:
         min_length = int(str(sys.argv[3]).split(  # format: Minutes.Seconds
             '.')[0]) * 60 + int(str(sys.argv[3]).split('.')[1])  # converted to seconds
-        if min_length < 1:
-            min_length = 1  # keep min_length no smaller than one second
-
-        movie_name = sys.argv[4] + '.mp4'
     except:
-        arg_error('Unspecified issue retrieving sys.argv data.')
+        arg_error('[min_length] not parsable. \'{0}\' was supplied when the correct format is \'numbers.numbers\'.'.format(sys.argv[3]))
 
+    if min_length < 1:
+        min_length = 1  # keep min_length no smaller than one second
+
+    movie_name = sys.argv[4] + '.mp4'
+
+
+    # start of moviepy logic
     image_clip = ImageClip(image_src)  # get image
     audio = AudioFileClip(audio_src)  # get audio
 
