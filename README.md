@@ -1,6 +1,6 @@
 ## py-looper
 
-Create looping videos from a loopable audio track and a static image. Resulting in a video file that dynamically stretches to never cut off your track :heart:.
+Create long videos from a loopable audio track and a static image. Resulting in a video file that dynamically stretches to never cut off your track :heart:.
 
 <br>
 
