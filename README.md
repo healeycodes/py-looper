@@ -56,9 +56,7 @@ Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
 
 <br>
 
-### Extra
-
-#### `[location]`
+#### `[location]` (not required)
 
 `python main.py [image] [audio] [min_length] [movie_name] [location]`
 
