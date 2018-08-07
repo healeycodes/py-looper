@@ -60,4 +60,4 @@ Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
 
 `python main.py [image] [audio] [min_length] [movie_name] [location]`
 
-A directory path to save the video to. E.g., `C:/videos`. Can be set to an empty string like `''` or `""`. Folders will be created recursively if required. This argument is not required to create videos but without it the files will be created whereever you launched the script from.
+A directory path to save the video to. E.g., `C:/videos`. Can be set to an empty string like `''` or `""`. Folders will be created recursively. This argument is not required to create videos but without it the files will be created whereever you launched the script from.
