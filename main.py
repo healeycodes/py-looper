@@ -1,5 +1,5 @@
 import sys
-import os
+import pathlib
 import multiprocessing
 from moviepy.editor import ImageClip, AudioFileClip
 from moviepy.audio.fx import audio_loop
@@ -14,6 +14,7 @@ def arg_error(err, e=None):
     print('Required args: [image] [audio] [min_length] [movie_name]')
     print('E.g., my_image.png my_audio.mp3 0.30 my_movie')
     print('Note: [min_length] is formatted as Minutes.Seconds')
+    print('Optional ending arg: [location], e.g., \'C:/videos\'')
     input('Quiting..')
     sys.exit(1)
 
@@ -25,6 +26,20 @@ def video_creation():
     if len(sys.argv) < 5:
         arg_error('{0} args supplied but {1} args required.'.format(
             len(sys.argv) - 1, 4))
+
+    location = ''  # default is no location, i.e., save video in working directory
+    if len(sys.argv) > 5:
+        if len(sys.argv[5]) > 0:  # allow empty path for future compatibility
+            location = sys.argv[5]
+            # append slash if required
+            if location[-1] != '/' and location[-1] != '\\':
+                location += '/'
+            try:
+                # create directory if needed (works recursively)
+                pathlib.Path(location).mkdir(parents=True, exist_ok=True)
+            except Exception as e:
+                arg_error('problem with location \'{0}\'. Either it could not be found or it could not be created.'.format(
+                    location), e)
 
     image_src = sys.argv[1]
     audio_src = sys.argv[2]
@@ -57,7 +72,7 @@ def video_creation():
     image_clip.duration = audio.duration
 
     # render!
-    image_clip.write_videofile(movie_name, preset='ultrafast',
+    image_clip.write_videofile(location + movie_name, preset='ultrafast',
                                threads=multiprocessing.cpu_count())
 
 

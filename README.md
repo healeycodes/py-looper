@@ -53,3 +53,13 @@ The program will loop the audio file until the resulting video is at least as lo
 #### `[movie_name]`
 
 Any string, e.g., `hello` or `test-123`. The file will be saved as MP4.
+
+<br>
+
+### Extra
+
+#### `[location]`
+
+`python main.py [image] [audio] [min_length] [movie_name] [location]`
+
+A directory path to save the video to. E.g., `C:/videos`. Can be set to an empty string like `''` or `""`. Folders will be created recursively if required.
