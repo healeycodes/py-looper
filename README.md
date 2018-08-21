@@ -10,7 +10,7 @@ python - https://www.python.org. Tested with Python v3.6.5 (and assumed to not w
 
 ffmpeg - https://www.ffmpeg.org/ - is required but should be installed automatically if not present. It's also packaged with some OSes and other programs often require it.
 
-pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager and is sometimes installed when Python is.
+pip - https://pip.pypa.io/en/stable/installing/ - is required. It's the standard Python package manager and is sometimes installed during Python's installation.
 
 <br>
 
